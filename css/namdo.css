@@ -1,0 +1,59 @@
+@charset "uft-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+a {text-decoration: none; color: #333;}
+img {max-width: 100%;}
+#layout {max-width: 1000px; display: flex;}
+header {background: #eee; padding: 20px 10px; width: 300px;}
+header ul {list-style: none; padding-top: 20px;}
+
+header li {position: relative; }
+header li a {display: block; padding: 10px; text-align: center; }
+
+.mainMenu {font-weight: bold; font-size: 1.05rem; background: #555; color: white; border-bottom: 1px solid #eee;}
+.mainMenu:hover , header li:hover .mainMenu:focus {background: #e63d00f6; color: #fff;}
+
+header li nav {position: absolute;  width: 100%; top: 10px; left: 160px; z-index: 1; display: none;}
+header li nav a {background: #aaa9a1; color: white; text-shadow: 0 0 10px rgb(71, 62, 40);}
+
+header li nav a:hover , header li nav a:focus {background: #f39e00;}
+header li:hover nav , header li:focus-within nav{display: block;}
+
+
+#slideArea {width: 800px; height: 350px; overflow: hidden;}
+#slideArea h1 {display: none;}
+#slide {position: relative; width: 2400px; display: flex; left: 0;}
+
+
+
+main{height: 200px; width: 800px; overflow: hidden; display: flex; padding: 10px;}
+main h2 {font-size: 1.2rem; border-bottom: 2px solid #aaa; margin-bottom: 10px;}
+
+main h2 a {float: right; font-weight: normal; font-size: 0.8rem; }
+#notice {flex: 1;}
+#notice ol {list-style: none;}
+#notice li {line-height: 170%; letter-spacing: -1px;}
+#notice span {float: right; color: #666;}
+#notice li a:hover {text-decoration: underline; color: #0086f3;}
+
+
+#gallery {flex: 0.9; margin: 0 40px;}
+#gallery div {display: flex;}
+#gallery div a {margin: 5px;}
+
+#quick {flex: 0.7; padding-top: 20px;}
+#quick h2 {display: none;}
+
+footer {height: 100px; background: #ddd; overflow: hidden; font-size: 0.9rem; padding: 30px; display: flex;}
+footer div {padding-left: 30px;}
+footer nav span {color: #aaa; padding: 0 10px;}
+footer nav a:hover {color: black; text-decoration: underline;}
+footer p {color: #555; padding-top: 10px;}
+
+#popup {position: absolute; background: white; width: 600px; left: 200px;
+top: 100px; padding: 30px 150px; border-radius: 20px; box-sizing: 0 0 10px rgba(0,0,0, 0.5); display: none;}
+#popup h3 {padding-bottom: 10px;}
+#popup img {width: 50%;}
+#popup p {line-height: 180%; padding: 10px 0;}
+#popup button {float: right; padding: 3px 10px;}
